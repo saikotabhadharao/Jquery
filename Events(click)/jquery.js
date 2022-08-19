@@ -1,0 +1,49 @@
+$("Document").ready(function(){
+	$("p1").css("color","blue");
+	$("h1").css("backgroundColor","green");
+	
+	$(":text").css("color",'Red');
+	$(":text").css("backgroundColor",'blue');
+	$(":submit").css("color",'blue');
+$("[href]").css("backgroundColor","blue");
+$("[href]").css("color","white");
+});
+$("document").ready(function(){
+	$(":submit").click(function(){
+		$("p1").hide(3000);
+	});
+	$("p1").click(function(){
+		$("h1").hide(3000)
+	});
+});
+$("document").ready(function(){
+$("h1").mouseenter(function(){
+	$('p4').css("color","red")
+});
+});
+$("document").ready(function(){
+$("h1").hover(function(){
+	$(this).css("color",'red')
+},function(){
+	$(this).css('color','blue')
+});
+});
+
+
+$("document").ready(function(){
+$("input[type='text']").mouseenter(function(){
+$(this).css("color","red")
+});
+});
+
+$("document").ready(function(){
+	$("#hide").click(function(){
+		$("h1").hide(3000);
+	});
+	$("#show").click(function(){
+		$("h1").show(3000);
+	});
+	$("#toggle").click(function(){
+		$("h1").toggle(3000);
+	});
+});

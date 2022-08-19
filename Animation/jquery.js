@@ -1,0 +1,13 @@
+$("document").ready(function(){
+	$("#click").click(function(){
+		$("p").css("color","red");
+		$("#animate").animate({marginLeft:"600px"},3000)
+					.animate({fontSize:"3em"},2000);
+	});
+	$("#stop1").click(function(){
+		$("#animate").stop();
+	});
+	$("#stop2").click(function(){
+		$("#animate").stop(true,true);
+	});
+});
